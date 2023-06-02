@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Form</h2>
+    <p>will helps to send client data to the server</p>
+    <p>there are tow methods for sending data to the server</p>
+    <p>input type submit will helps to send data to the server </p>
+    <p>input name attribute is responsible for sending data to the server </p>
+    <ol>
+        <li>get</li>
+        <li>post</li>
+    </ol>
+
+    <h3>GET</h3>
+    <p>get is a default method for form</p>
+    <p>get will send data using URL</p>
+    <p>get less secure because it will send data to server by URL</p>
+    <p>by using ? (query string ) it will appending data to the URL</p>
+    <p>file:///C:/xampp/htdocs/WD/17DecWD-FE_TTS8/HTML/24form/formintro.html?username=test&password=test</p>
+    <p>get method has limitation of sending data to server is 2048 char only 1024bytes</p>
+    <p>get method not support file uploading</p>
+    <h3>POST</h3>
+    <p>we can apply post method to the form by method attribute of form tag</p>
+    <p>Post willnot send data using URL</p>
+    <p>POST secure because it's not using' URL for sending data</p>
+    <p>POST method no limitation</p>
+    <p>POST method support file uploading</p>
+    <p>for uploading file we need to add enctype="multipart/form-daa" attribute in form tag</p>
+    <form>
+        <input type="text" name="username" id="username">
+        <input type="password" name="password" id="password">
+        <input type="submit" name="" id="">
+    </form>
+    <form method="post">
+        <input type="text" name="username_post" id="uusername_post">
+        <input type="password" name="password_post" id="password_post">
+        <input type="submit" name="" id="">
+    </form>
+    <form method="post" enctype="multipart/form-data">
+        <input type="text" name="username_post" id="uusername_post">
+        <input type="password" name="password_post" id="password_post">
+        <input type="file" name="file_post" id="file_post">
+        <input type="submit" name="" id="">
+    </form>
+
+
+
+    <input type="submit" name="" id="">
+    <input type="button" name="" id="">
+    <input type="file" name="" id="">
+    <input type="radio" name="" id="">
+    <input type="checkbox" name="" id="">
+
+
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="b" name="b" value="50" /> +
+        <input type="number" id="a" name="a" value="10" /> =
+        <output name="result" for="a b">60</output>
+    </form>
+    <img src="_form__ The Form element - HTML_ HyperText Markup Language _ MDN.png" alt="">
+
+
+    <object type="application/pdf" data="../../Material/html-tags-chart.pdf" width="250" height="200">
+    </object>
+</body>
+
+</html>
