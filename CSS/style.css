@@ -1,0 +1,5 @@
+/* .css extension file just contains css data never contain HTMl tags like <h2>somehting</h2> */
+/* selcetor{ property:value ; } */
+h2 {
+    color: rgb(17, 143, 201);
+}
