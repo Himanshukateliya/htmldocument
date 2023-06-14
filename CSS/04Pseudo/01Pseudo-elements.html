@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="section-content">
+        <p>Pseudo-elements defined by a set of CSS specifications include the following:</p>
+        <p>A</p>
+        <ul>
+            <li><a href="/en-US/docs/Web/CSS/::after"><code>::after</code></a></li>
+        </ul>
+        <p>B</p>
+        <ul>
+            <li><a href="/en-US/docs/Web/CSS/::backdrop"><code>::backdrop</code></a></li>
+            <li><a href="/en-US/docs/Web/CSS/::before"><code>::before</code></a></li>
+
+        </ul>
+        <p>C</p>
+        <ul>
+            <li><a href="/en-US/docs/Web/CSS/::cue"><code>::cue</code></a></li>
+            <li><a href="/en-US/docs/Web/CSS/::cue-region"><code>::cue-region</code></a></li>
+        </ul>
+        <p>F</p>
+        <ul>
+            <li><a href="/en-US/docs/Web/CSS/::first-letter"><code>::first-letter</code></a></li>
+            <li><a href="/en-US/docs/Web/CSS/::first-line"><code>::first-line</code></a></li>
+            <li><a href="/en-US/docs/Web/CSS/::file-selector-button"><code>::file-selector-button</code></a></li>
+        </ul>
+        <p>G</p>
+        <ul>
+            <li><a href="/en-US/docs/Web/CSS/::grammar-error"><code>::grammar-error</code></a> <abbr
+                    class="icon icon-experimental" title="Experimental. Expect behavior to change in the future.">
+                    <span class="visually-hidden">Experimental</span>
+                </abbr></li>
+        </ul>
+        <p>M</p>
+        <ul>
+            <li><a href="/en-US/docs/Web/CSS/::marker"><code>::marker</code></a></li>
+        </ul>
+        <p>P</p>
+        <ul>
+            <li><a href="/en-US/docs/Web/CSS/::part"><code>::part()</code></a></li>
+            <li><a href="/en-US/docs/Web/CSS/::placeholder"><code>::placeholder</code></a></li>
+        </ul>
+        <p>S</p>
+        <ul>
+            <li><a href="/en-US/docs/Web/CSS/::selection"><code>::selection</code></a></li>
+            <li><a href="/en-US/docs/Web/CSS/::slotted"><code>::slotted()</code></a></li>
+            <li><a href="/en-US/docs/Web/CSS/::spelling-error"><code>::spelling-error</code></a> <abbr
+                    class="icon icon-experimental" title="Experimental. Expect behavior to change in the future.">
+                    <span class="visually-hidden">Experimental</span>
+                </abbr></li>
+        </ul>
+        <p>T</p>
+        <ul>
+            <li><a href="/en-US/docs/Web/CSS/::target-text"><code>::target-text</code></a> <abbr
+                    class="icon icon-experimental" title="Experimental. Expect behavior to change in the future.">
+                    <span class="visually-hidden">Experimental</span>
+                </abbr></li>
+        </ul>
+    </div>
+
+
+    <ol>
+        <li><a href="/en-US/docs/Web/CSS/::before"><code>::before</code></a></li>
+        <li><a href="/en-US/docs/Web/CSS/::after"><code>::after</code></a></li>
+        <li><a href="/en-US/docs/Web/CSS/::marker"><code>::marker</code></a></li>
+        <li><a href="/en-US/docs/Web/CSS/::placeholder"><code>::placeholder</code></a></li>
+        <li><a href="/en-US/docs/Web/CSS/::first-letter"><code>::first-letter</code></a></li>
+        <li><a href="/en-US/docs/Web/CSS/::first-line"><code>::first-line</code></a></li>
+    </ol>
+
+
+    <style>
+        h2::after {
+            content: "~ ";
+        }
+
+        /* h2::before{ content: "Important Note : ";  } */
+        h2::before {
+            content: "~ ";
+        }
+
+        p::first-letter {
+            font-size: 36px;
+        }
+
+        p::first-line {
+            color: brown;
+        }
+
+        p::selection {
+            color: white;
+            background-color: brown;
+        }
+
+        input::placeholder {
+            color: brown;
+        }
+    </style>
+
+    <h2>Title</h2>
+    <h2>Other</h2>
+    <h2>Test</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam itaque eligendi, numquam incidunt temporibus
+        commodi necessitatibus voluptatum, ducimus, dolore ullam praesentium! Unde eaque pariatur quia consectetur fugit
+        enim voluptatum eveniet.</p>
+    <input type="text" placeholder="Enter User Name" name="" id="">
+
+</body>
+
+</html>
