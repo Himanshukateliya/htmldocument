@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+    /* &lt;a&gt; elements with a title attribute */
+    a[title] {
+        color: purple;
+    }
+    
+    /* &lt;a&gt; elements with an href matching "https://example.org" */
+    a[href="https://example.org"]
+    {
+        color: green;
+    }
+    
+    /* &lt;a&gt; elements with an href containing "example" */
+    a[href*="example"] {
+        font-size: 2em;
+    }
+    
+    /* &lt;a&gt; elements with an href ending ".org" */
+    a[href$=".org"] {
+        font-style: italic;
+    }
+    
+    /* &lt;a&gt; elements whose class attribute contains the word "logo" */
+    a[class~="logo"] {
+        padding: 2px;
+    }
+            
+    </pre>
+    <style>
+        a[title] {
+            color: aqua;
+        }
+
+        a[href="https://tops-int.com"] {
+            color: rgb(19, 102, 179);
+        }
+
+        /* div[class*="col"] {
+        margin: 15px;
+    } */
+        div[class~="col"] {
+            margin: 15px;
+        }
+    </style>
+    <a href="test">Google</a>
+    <a title="test" href="test">Google</a>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, eligendi. Libero minus perspiciatis,
+        corporis reiciendis accusantium <a href="https://tops-int.com">TOPS Techno</a> temporibus nostrum maiores optio
+        nemo, qui explicabo est! Numquam, deserunt aperiam? Facilis, porro nihil? </p>
+    <div class="div">div data</div>
+    <div class="col-md col">div data</div>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>
