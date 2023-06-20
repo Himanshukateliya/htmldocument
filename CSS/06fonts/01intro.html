@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .font-family-sans {
+            font-family: sans-serif;
+        }
+
+        .font-family-serif {
+            font-family: serif;
+        }
+
+        .font-size-px {
+            font-size: 25px;
+        }
+
+        .font-size-rem {
+            font-size: 3rem;
+        }
+
+        .font-size-vh {
+            font-size: 3vh;
+        }
+
+        .font-size-vw {
+            font-size: 3vw;
+        }
+
+        .font-size-em {
+            font-size: 3em;
+        }
+
+        .font-size-in {
+            font-size: 1.4in;
+        }
+
+        .font-size-cm {
+            font-size: 3cm;
+        }
+
+        .font-size-mm {
+            font-size: 25mm;
+        }
+
+        .font-size-pr {
+            font-size: 25%;
+        }
+
+        .font-size-pt {
+            font-size: 25pt;
+        }
+
+        .font-stretch {
+            font-stretch: expanded;
+            font-family: 'Times New Roman';
+            font-weight: 300;
+        }
+
+        .font-variant {
+            font-variant: small-caps;
+            line-height: 25px;
+        }
+
+        @font-face {
+            font-family: kaipan;
+            src: url(fonts/BeefSteak.otf);
+        }
+
+        .cust-font {
+            font-family: kaipan;
+            line-height: 35px;
+            font-size: 26px;
+            font-weight: 200;
+            font-stretch: expanded;
+            letter-spacing: 2px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <img src="typesOfFonts.png" alt="">
+    <ul>
+        <li><code>font-family</code></li>
+        <li><code>font-size</code></li>
+        <li><code>font-stretch</code></li>
+        <li><code>font-style</code></li>
+        <li><code>font-variant</code></li>
+        <li><code>font-weight</code></li>
+        <li><code>line-height</code></li>
+    </ul>
+    <p class="font-family-sans">font-family-sans</p>
+    <p class="font-family-serif">font-family-serif</p>
+    <p class="font-size-px">font-size 25px</p>
+    <p class="font-size-em">font-size 3em 1em = 16px</p>
+    <p class="font-size-rem">font-size 3rem</p>
+    <p class="font-size-vh">font-size 3vh</p>
+    <p class="font-size-in">font-size 25in</p>
+    <p class="font-size-em">font-size 25em</p>
+    <p class="font-size-vw">font-size 25vw</p>
+    <p class="font-size-mm">font-size 25mm</p>
+    <p class="font-size-pr">font-size 25%</p>
+    <p class="font-size-pt">font-size 25pt</p>
+    <pre>
+        /* &lt;absolute-size&gt; values */
+            font-size: xx-small;
+            font-size: x-small;
+            font-size: small;
+            font-size: medium;
+            font-size: large;
+            font-size: x-large;
+            font-size: xx-large;
+            font-size: xxx-large;
+            
+            /* &lt;relative-size&gt; values */
+            font-size: smaller;
+            font-size: larger;
+            
+            /* &lt;length&gt; values */
+            font-size: 12px;
+            font-size: 0.8em;
+            
+            /* &lt;percentage&gt; values */
+            font-size: 80%;
+            
+            /* math value */
+            font-size: math;
+            
+            /* Global values */
+            font-size: inherit;
+            font-size: initial;
+            font-size: revert;
+            font-size: revert-layer;
+            font-size: unset;
+    </pre>
+    <div class="cust-font">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi magni ipsam, molestiae
+        cumque ratione rem non laborum quia ad! Maiores voluptates nostrum qui labore aliquid natus aut sed sapiente
+        illo!</div>
+    <p class="font-stretch">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, accusamus! Consectetur ad
+        nulla sunt earum reprehenderit, unde esse odit tenetur assumenda deserunt, harum illum libero, consequuntur
+        magnam quod! Commodi, rem.</p>
+    <p class="font-variant">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, accusamus! Consectetur ad
+        nulla sunt earum reprehenderit, unde esse odit tenetur assumenda deserunt, harum illum libero, consequuntur
+        magnam quod! Commodi, rem.</p>
+</body>
+
+</html>
