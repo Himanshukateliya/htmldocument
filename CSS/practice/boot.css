@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #7634f9;
+    height: 70px;
+    line-height: 73px;
+    color: white;
+}
+
+.logo {
+    font-size: 40px;
+    margin: 0 0 0 90px;
+    padding: 0 20px 0 60px;
+}
+
+.logo i {
+    transition: all 400ms;
+}
+
+.logo i:hover {
+    transform: rotate(-5deg)scale(1.1);
+}
+
+.fl {
+    float: left;
+}
+
+nav li {
+    display: inline;
+    padding: 0 10px;
+    font-size: 22px;
+    opacity: .8;
+    transition: all 200ms;
+}
+
+nav li:hover {
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.social {
+    float: right;
+    margin: 0 90px;
+    padding: 0 50px;
+}
+
+.social .pad {
+    margin: 0 10px;
+}
+
+.social i {
+
+    font-size: 20px;
+    color: white;
+    opacity: .8;
+    transition: all 200ms;
+}
+
+.social i:hover {
+    opacity: 1;
+}
+
+.select {
+    padding: 0 10px;
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-right: 1px solid rgb(174, 174, 174);
+    border-left: 1px solid rgb(174, 174, 174);
+    opacity: .8;
+    transition: all 200ms;
+}
+
+.select:hover {
+    opacity: 1;
+}
+
+.select option {
+    color: black;
+    padding: 20px 20px;
+}
