@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+        /* precomposed values */
+        display: block;
+        display: inline;
+        display: inline-block;
+        display: flex;
+        display: inline-flex;
+        display: grid;
+        display: inline-grid;
+        display: flow-root;
+
+        /* box generation */
+        display: none;
+        display: contents;
+
+        /* multi-keyword syntax */
+        display: block flow;
+        display: inline flow;
+        display: inline flow-root;
+        display: block flex;
+        display: inline flex;
+        display: block grid;
+        display: inline grid;
+        display: block flow-root;
+
+        /* other values */
+        display: table;
+        display: table-row; /* all table elements have an equivalent CSS display value */
+        display: list-item;
+
+        /* Global values */
+        display: inherit;
+        display: initial;
+        display: revert;
+        display: revert-layer;
+        display: unset;
+    </pre>
+    <ol>
+        <li>block</li>
+        <li>inline</li>
+        <li>inline-block</li>
+        <li>flex</li>
+        <li>grid</li>
+    </ol>
+    <label for="">lable display inline before div</label>
+    <div>test div as display block</div>
+    <label for="">lable display inline after div</label>
+    <p>p as display block</p>
+    <label for="">lable display inline</label>
+    <span>span display inline</span>
+    <style>
+        * {
+            border: 1px solid;
+        }
+
+        .disp-blk {
+            display: block;
+        }
+
+        .disp-inline {
+            display: inline;
+            padding: 50px;
+            margin: 50px;
+            /* width: 500px; */
+            /* height: 1500px; */
+            background-color: rgba(165, 42, 42, 0.43);
+        }
+
+        .disp-inline-blk {
+            display: inline-block;
+            padding: 50px;
+            margin: 50px;
+            /* width: 500px; */
+            /* height: 1500px; */
+        }
+    </style>
+    <h3>display block</h3>
+    Before Display Block
+    <div class="disp-blk">Display Block</div>
+    After Display Block
+    <h3>display inline</h3>
+    Before Display Inline
+    <div class="disp-inline">Display Inline</div>
+    After Display Inline
+    <h3>display inline block</h3>
+    Before Display Inline Block
+    <div class="disp-inline-blk">Display Inline Block</div>
+    After Display Inline Block
+</body>
+
+</html>
