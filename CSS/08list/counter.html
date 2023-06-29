@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol {
+            /*list-style-type: none*/
+            counter-reset: li;
+        }
+
+        ol>li:before {
+            counter-increment: li;
+            content: counter(li) ". ";
+            position: relative;
+            top: auto;
+            left: auto;
+            margin-right: 10px;
+            color: red;
+        }
+
+        /* ol[type="decimal"]>li:before {
+            content: counter(li, decimal) ". ";
+        }
+        ol[type="a" s]>li:before {
+            content: counter(li, lower-alpha) ". ";
+        }
+        ol[type="A" s]>li:before {
+            content: counter(li, upper-alpha) ". ";
+        }  */
+        /* 
+       */
+    </style>
+</head>
+
+<body>
+    <ol type="decimal">
+        <li>First ordered item</li>
+        <li>Second ordered item
+            <ol type="a">
+                <li>First ordered item</li>
+                <li>Second ordered item
+                    <ol type="A">
+                        <li>First ordered item</li>
+                        <li>Second ordered item</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ol>
+</body>
+
+</html>
