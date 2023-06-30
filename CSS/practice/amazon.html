@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 25px;
+        }
+
+        .containar {
+            width: 1400px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            width: 100px;
+            padding: 15px 0 0 5px;
+
+        }
+
+        .h_text h3 {
+            padding: 15px 0 0 5px;
+            display: inline-block;
+        }
+
+        input {
+            border-radius: 10px;
+            width: 40%;
+        }
+
+        select {
+            margin-top: 20px;
+        }
+
+        .hd_text h4 {
+            display: inline;
+            padding: 8px 0 0 10px;
+        }
+
+        .magni {
+            padding: 15px 0 0 5px;
+            background-color: orange;
+            width: 40px;
+        }
+
+        .cart {
+            padding: 15px 0 0 15px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="containar">
+            <div class="row">
+                <div class="col">
+                    <div class="logo"><img src="image/Amazon_logo.svg.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="h_text">
+                        <h3>select your address</h3>
+                    </div>
+                </div>
+                <div class="col"><select name="" id="">
+                        <option value="All">All</option>
+                        <option value="All categary">All categary</option>
+                        <option value="skill">skill</option>
+                    </select>
+                </div>
+                <input type="text" placeholder="search amazon.in">
+                <div class="magni"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="col">
+                    <select name="" id="">
+                        <option value="english">english</option>
+                        <option value="hindi">hindi</option>
+                        <option value="Gujrati">Gujrati</option>
+                    </select>
+                    <select name="account&list" id="" disabled="disabled">
+                        <option value="your account">your account</option>
+                        <option value="your order">your order</option>
+                        <option value="your summury">your summury</option>
+                    </select>
+                </div>
+
+                <div class="col">
+                    <div class="hd_text">
+                        <h4>Return<br>&Orders</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>cart</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
