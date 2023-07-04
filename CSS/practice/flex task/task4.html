@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: bisque;
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        .row {
+            display: flex;
+            /* border: 1px solid black; */
+        }
+
+        .data {
+            margin: 5px 3px;
+            border-radius: 10px;
+            box-shadow: rgb(147, 165, 183) 5px 5px 5px;
+            height: 200px;
+            padding: 5px 10px;
+            color: white;
+            /* width: 300px; */
+        }
+
+        .box1 {
+            background-color: aqua;
+            flex-grow: 3;
+        }
+
+        .box2 {
+            background-color: red;
+
+        }
+
+        .box3 {
+            background-color: blue;
+
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Defult Setup</h2>
+        <p> Default setup of flex properties is flex: o 1 auto. That's shortannd for flex-grow, flex-shrink, and
+            fles-basis properties values.
+        </p>
+        <p>This setup basically tells us: "All the flex children <b>should not grow should shrink</b> at the same rate,
+            and have their <b>initial size based on their width or height.</b>
+
+        </p>
+        <br>
+        <div class="row ">
+
+            <div class="box1 data">
+                <h3>First Card</h3>
+                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+                    demoralized by the charms of pleasure of the moment, su blinded by desire, that they cannot foresee
+                    the pain and trouble that are bound to ensue, and equal blame belongs to those who fall in their
+                    duty through weakness of will, which is the same as saying through shrinking from fail and pain.
+                </p>
+            </div>
+
+            <div class="box2 data">
+                <h3>Second Card</h3>
+
+                <p>I'm the shortest.</p>
+            </div>
+
+            <div class="box3 data">
+                <h3>Third Card</h3>
+                <p>But in certain circumstances and owing to the claims of duty or the obligations of business it will
+                    frequently occur that pleasures have to be repudiated and annoyances accepted.</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
