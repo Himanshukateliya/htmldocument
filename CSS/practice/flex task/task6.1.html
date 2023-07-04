@@ -7,20 +7,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
     <style>
+        @font-face {
+            font-family: new;
+            src: url(Font/BebasNeue-Regular.ttf);
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        body {
-            background-color: #cfe5e6;
+        h2 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 30px;
+            font-family: new;
+            width: 50%;
+            margin: 50px auto 10px auto;
+
         }
 
         .container {
             width: 1000px;
-            margin: 0 auto;
+            margin: 50px auto;
+        }
+
+        body {
+            background-color: #cfe5e6;
+
         }
 
         .box {
@@ -41,93 +58,107 @@
 
         p {
             text-align: center;
+            font-family: new;
         }
 
         .justify-content {
             justify-content: center;
         }
 
-
         .row {
             display: flex;
             flex-wrap: wrap;
+            margin-top: 30px;
+        }
 
+        .red {
+            color: red;
+        }
+
+        .para {
+            margin: 0 auto;
+            width: 70%;
+            color: gray;
         }
     </style>
-    <title>Document</title>
 
 </head>
 
 <body>
     <div class="container">
-        <h1 style="text-align: center; margin: 10px 0;">OUR LATEST TECHNOLOGY &</h1>
-        <h2 style="color: red; text-align: center; margin: 10px 0;">INTERESTING FEATURES</h2>
-        <p style="text-align: center;">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR
+        <h2>OUR LATEST TECHNOLOGY &
+            <span class="red">
+                INTERESTING FEATURES
+            </span>
+        </h2>
+
+        <p class="para" style="text-align: center;">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO
+            EIUSMOD TEMPOR
             INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. QUIS IPSUM SUSPENDISSE ULTRICES GRAVIDA. RISUS COMMODO VIVERRA
             MAECENAS ACCUMSAN LACUS VEL FACILISIS.</p>
-        <div class="container">
-            <div class="row justify-content">
 
-                <div class="col">
-                    <div class="box" style="background-color: #12a8e0;">
-                        <i class="fa-solid fa-3x fa-droplet"></i>
-                    </div>
-                    <p>Water</p>
+        <div class="row justify-content">
 
+            <div class="col">
+                <div class="box" style="background-color: #12a8e0;">
+                    <i class="fa-solid fa-3x fa-droplet"></i>
                 </div>
-
-                <div class="col">
-                    <div class="box" style="background-color: #ff9f00;">
-                        <i class="fa-regular fa-3x fa-lightbulb"></i>
-                    </div>
-                    <p>Water</p>
-                </div>
-
-                <div class="col">
-                    <div class="box" style="background-color: #ff463d;">
-                        <i class="fa-solid fa-3x fa-fire-flame-curved"></i>
-                    </div>
-                    <p>Water</p>
-                </div>
-                <div class="col">
-                    <div class="box" style="background-color: #ee5679;">
-                        <i class="fa-solid fa-3x fa-bag-shopping"></i>
-                    </div>
-                    <p>Water</p>
-                </div>
-                <div class="col">
-                    <div class="box" style="background-color: #055689;">
-                        <i class="fa-solid fa-3x fa-mobile-screen"></i>
-                    </div>
-                    <p>Water</p>
-                </div>
-                <div class="col">
-                    <div class="box" style="background-color: #098462;">
-                        <i class="fa-solid fa-3x fa-credit-card"></i>
-                    </div>
-                    <p>Water</p>
-                </div>
-                <div class="col">
-                    <div class="box" style="background-color: #146477;">
-                        <i class="fa-solid fa-3x fa-shield-halved"></i>
-                    </div>
-                    <p>Water</p>
-                </div>
-                <div class="col">
-                    <div class="box" style="background-color: #575fff;">
-                        <i class="fa-solid fa-3x fa-house"></i>
-                    </div>
-                    <p>Water</p>
-                </div>
-                <div class="col">
-                    <div class="box" style="background-color: #4f526b;">
-                        <i class="fa-solid fa-3x fa-clipboard"></i>
-                    </div>
-                    <p>Water</p>
-                </div>
+                <p>Water</p>
 
             </div>
+
+            <div class="col">
+                <div class="box" style="background-color: #ff9f00;">
+                    <i class="fa-regular fa-3x fa-lightbulb"></i>
+                </div>
+                <p>Water</p>
+            </div>
+
+            <div class="col">
+                <div class="box" style="background-color: #ff463d;">
+                    <i class="fa-solid fa-3x fa-fire-flame-curved"></i>
+                </div>
+                <p>Water</p>
+            </div>
+            <div class="col">
+                <div class="box" style="background-color: #ee5679;">
+                    <i class="fa-solid fa-3x fa-bag-shopping"></i>
+                </div>
+                <p>Water</p>
+            </div>
+            <div class="col">
+                <div class="box" style="background-color: #055689;">
+                    <i class="fa-solid fa-3x fa-mobile-screen"></i>
+                </div>
+                <p>Water</p>
+            </div>
+            <div class="col">
+                <div class="box" style="background-color: #098462;">
+                    <i class="fa-solid fa-3x fa-credit-card"></i>
+                </div>
+                <p>Water</p>
+            </div>
+            <div class="col">
+                <div class="box" style="background-color: #146477;">
+                    <i class="fa-solid fa-3x fa-shield-halved"></i>
+                </div>
+                <p>Water</p>
+            </div>
+            <div class="col">
+                <div class="box" style="background-color: #575fff;">
+                    <i class="fa-solid fa-3x fa-house"></i>
+                </div>
+                <p>Water</p>
+            </div>
+            <div class="col">
+                <div class="box" style="background-color: #4f526b;">
+                    <i class="fa-solid fa-3x fa-clipboard"></i>
+                </div>
+                <p>Water</p>
+            </div>
+
         </div>
+    </div>
 
     </div>
 </body>
