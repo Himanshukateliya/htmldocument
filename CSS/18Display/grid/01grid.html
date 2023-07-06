@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ border: 1px solid; }
+        .wrapper{
+            /* display: flex; */
+            display: grid;
+            /* grid-template-columns: repeat(3,0); */
+            /* grid-template-columns: repeat(3,1); */
+            grid-template-columns: repeat(3,1fr);
+            /* grid-template-columns: repeat(3,0fr); */
+            gap: 10px;
+            grid-auto-rows: minmax(100px,auto);
+        }
+        .one{ grid-column:1/3 ; grid-row:1 ; background-color: rgba(137, 43, 226, 0.584); }
+        .two{ grid-column:2/4 ; grid-row:1/3 ; background-color: rgba(77, 44, 7, 0.503); }
+        .three{ grid-column: 1; grid-row:2/5 ; background-color: rgba(153, 226, 43, 0.616); }
+        .four{ grid-column: 3; grid-row:3 ; background-color: rgba(226, 101, 43, 0.718); }
+        .five{ grid-column: 2; grid-row:3/5 ; background-color: rgba(67, 226, 43, 0.625); }
+        .six{ grid-column: 3; grid-row:4 ; background-color: rgba(43, 208, 226, 0.647); }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="one">One</div>
+        <div class="two">Two</div>
+        <div class="three">Three</div>
+        <div class="four">Four</div>
+        <div class="five">Five</div>
+        <div class="six">Six</div>
+      </div>
+</body>
+</html>
