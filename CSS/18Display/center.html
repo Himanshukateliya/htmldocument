@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            --blue: #30A2FF;
+            --white: #FFFF;
+            --black: #000;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* --------------------- box 1 ------------------------ */
+
+        .box_1 {
+            display: flex;
+            height: 100vh;
+            background-color: var(--blue);
+        }
+
+        .centered-div_1 {
+            margin: auto;
+            height: 100px;
+            width: 100px;
+            background-color: var(--white);
+        }
+
+        /* --------------------- box 2 ------------------------ */
+
+        .box_2 {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            background-color: var(--black);
+        }
+
+        .centered-div_2 {
+            height: 100px;
+            width: 100px;
+            background-color: #FFFF;
+        }
+
+        /* --------------------- box 3 ------------------------ */
+        .box_3 {
+            position: relative;
+            height: 100vh;
+            background-color: var(--blue);
+
+        }
+
+        .centered_div_3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 100px;
+            width: 100px;
+            background-color: var(--white);
+
+        }
+
+        /* --------------------- box 4 ------------------------ */
+
+        .box_4 {
+            position: relative;
+            height: 100vh;
+            background-color: var(--black);
+        }
+
+        .centered_div_4 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: 100px;
+            width: 100px;
+            background-color: var(--white);
+        }
+
+        /* --------------------- box 5 ------------------------ */
+        .box_5 {
+            display: table;
+            width: 100%;
+            height: 100vh;
+            background-color: var(--blue);
+        }
+
+        .table-cell {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .centered_div_5 {
+            height: 100px;
+            width: 100px;
+            background-color: var(--white);
+            display: inline-block;
+        }
+
+        /* --------------------- box 6 ------------------------ */
+        .box_6 {
+            height: 100vh;
+            display: grid;
+            background-color: var(--black);
+        }
+
+        .centered_div_6 {
+            place-self: center;
+            height: 100px;
+            width: 100px;
+            background-color: var(--white);
+        }
+
+
+        h1 {
+            text-align: center;
+        }
+
+        /* --------------------- box 7 ------------------------ */
+
+        .box_7 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: var(--blue);
+        }
+
+        .centered_div_7 {
+            height: 100px;
+            width: 100px;
+            background-color: var(--white);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- --------------------- box 1 ------------------------  -->
+
+    <h1>Flexbox with Margin Auto</h1>
+    <div class="box_1">
+        <div class="centered-div_1"></div>
+    </div>
+
+    <!-- --------------------- box 2 ------------------------  -->
+
+    <h1>Grid with place-items center</h1>
+    <div class="box_2">
+        <div class="centered-div_2"></div>
+    </div>
+
+    <!-- --------------------- box 3 ------------------------  -->
+
+    <h1>Absolute Positioning and Transform</h1>
+
+    <div class="box_3">
+        <div class="centered_div_3"></div>
+    </div>
+
+    <!-- --------------------- box 4 ------------------------  -->
+
+    <h1>Absolute Positioning with Margin Auto</h1>
+
+    <div class="box_4">
+        <div class="centered_div_4"></div>
+    </div>
+
+    <!-- --------------------- box 5 ------------------------  -->
+
+    <h1>Table Display with Vertical Alignment</h1>
+
+    <div class="box_5">
+        <div class="table-cell">
+            <div class="centered_div_5"></div>
+        </div>
+    </div>
+
+    <!-- --------------------- box 6 ------------------------  -->
+
+    <h1>Grid with place-self center</h1>
+
+    <div class="box_6">
+        <div class="centered_div_6"></div>
+    </div>
+
+    <!-- --------------------- box 7 ------------------------  -->
+
+    <h1>Flexbox</h1>
+
+    <div class="box_7">
+        <div class="centered_div_7"></div>
+    </div>
+
+</body>
+
+</html>
