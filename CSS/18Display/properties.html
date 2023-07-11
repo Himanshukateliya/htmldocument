@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{ border: 1px solid; }
+    </style>
+</head>
+
+<body>
+
+    <h2>Using same-sized images</h2>
+    <p>These examples use the default align-items value of stretch, however, all images are the same size, so they keep
+        their original proportions.</p>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 20px;
+            align-items: stretch;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* justify-items: center; */
+        }
+
+        .grid img {
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+            max-width: 100%;
+        }
+    </style>
+    <main class="grid">
+        <img src="images/23m.jpg" alt="Sample photo">
+        <img src="images/24m.jpg" alt="Sample photo">
+        <img src="images/22l.jpg" alt="Sample photo">
+        <img src="images/15l.jpg" alt="Sample photo">
+        <img src="images/25m.jpg" alt="Sample photo">
+        <img src="images/16l.jpg" alt="Sample photo">
+    </main>
+    <h2>Default alignment (stretch)</h2>
+    <p>These examples also use the default alignment of stretch but, because not all images are the same size, it
+        results in some images being stretched.</p>
+
+    <style>
+        .grid-stretch {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+            align-items: stretch;
+            justify-items: stretch;
+        }
+
+        .grid-stretch img {
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+            max-width: 100%;
+        }
+    </style>
+    <div class="grid-stretch">
+        <img src="images/1m.jpg" alt="Sample photo">
+        <img src="images/24m.jpg" alt="Sample photo">
+        <img src="images/9m.jpg" alt="Sample photo">
+        <img src="images/12m.jpg" alt="Sample photo">
+        <img src="images/6m.jpg" alt="Sample photo">
+        <img src="images/25m.jpg" alt="Sample photo">
+    </div>
+
+    <h2>Align/justify start</h2>
+    <p>These examples use alignment values of start.</p>
+    <style>
+        .grid-align-justify {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 20px;
+            align-items: start;
+        }
+
+        .grid-align-justify img {
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+            max-width: 100%;
+        }
+    </style>
+    <div class="grid-align-justify">
+        <img src="images/1m.jpg" alt="Sample photo">
+        <img src="images/24m.jpg" alt="Sample photo">
+        <img src="images/9m.jpg" alt="Sample photo">
+        <img src="images/12m.jpg" alt="Sample photo">
+        <img src="images/6m.jpg" alt="Sample photo">
+        <img src="images/25m.jpg" alt="Sample photo">
+    </div>
+    <h3>Fluid</h3>
+    <style>
+        .grid-align-justify-fluid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+            align-items: start;
+            justify-items: start;
+        }
+
+        .grid-align-justify-fluid img {
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+            max-width: 100%;
+        }
+    </style>
+    <div class="grid-align-justify-fluid">
+        <img src="images/1m.jpg" alt="Sample photo">
+        <img src="images/24m.jpg" alt="Sample photo">
+        <img src="images/9m.jpg" alt="Sample photo">
+        <img src="images/12m.jpg" alt="Sample photo">
+        <img src="images/6m.jpg" alt="Sample photo">
+        <img src="images/25m.jpg" alt="Sample photo">
+    </div>
+
+
+
+    <h2>Align/justify center</h2>
+    <p>These examples use alignment values of center.</p>
+    <style>
+        .grid-align-center {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 20px;
+            align-items: center;
+        }
+
+        .grid-align-center img {
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+            max-width: 100%;
+        }
+    </style>
+    <div class="grid-align-center">
+        <img src="images/1m.jpg" alt="Sample photo">
+        <img src="images/24m.jpg" alt="Sample photo">
+        <img src="images/9m.jpg" alt="Sample photo">
+        <img src="images/12m.jpg" alt="Sample photo">
+        <img src="images/6m.jpg" alt="Sample photo">
+        <img src="images/25m.jpg" alt="Sample photo">
+    </div>
+
+    <h3>Fluid</h3>
+    <style>
+        .grid-align-center-fluid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .grid-align-center-fluid img {
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+            max-width: 100%;
+        }
+    </style>
+    <div class="grid-align-center-fluid">
+        <img src="images/1m.jpg" alt="Sample photo">
+        <img src="images/24m.jpg" alt="Sample photo">
+        <img src="images/9m.jpg" alt="Sample photo">
+        <img src="images/12m.jpg" alt="Sample photo">
+        <img src="images/6m.jpg" alt="Sample photo">
+        <img src="images/25m.jpg" alt="Sample photo">
+    </div>
+
+
+    <h2>Align/justify end</h2>
+    <p>These examples use alignment values of end.</p>
+    <style>
+        .grid-align-end {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 20px;
+            align-items: end;
+        }
+
+        .grid-align-end img {
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+            max-width: 100%;
+        }
+    </style>
+    <div class="grid-align-end">
+        <img src="images/1m.jpg" alt="Sample photo">
+        <img src="images/24m.jpg" alt="Sample photo">
+        <img src="images/9m.jpg" alt="Sample photo">
+        <img src="images/12m.jpg" alt="Sample photo">
+        <img src="images/6m.jpg" alt="Sample photo">
+        <img src="images/25m.jpg" alt="Sample photo">
+    </div>
+
+    <h3>Fluid</h3>
+    <style>
+        .grid-align-end-fluid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+            align-items: end;
+            justify-items: end;
+        }
+
+        .grid-align-end-fluid img {
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+            max-width: 100%;
+        }
+    </style>
+    <div class="grid-align-end-fluid">
+        <img src="images/1m.jpg" alt="Sample photo">
+        <img src="images/24m.jpg" alt="Sample photo">
+        <img src="images/9m.jpg" alt="Sample photo">
+        <img src="images/12m.jpg" alt="Sample photo">
+        <img src="images/6m.jpg" alt="Sample photo">
+        <img src="images/25m.jpg" alt="Sample photo">
+    </div>
+
+    <h2>Span 5 columns</h2>
+    <style>
+        .grid-span-columns {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            ;
+            grid-gap: 10px;
+            align-items: start;
+            justify-items: center;
+            margin: auto;
+            width: 540px;
+        }
+
+        .grid-span-columns img {
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+            max-width: 100%;
+        }
+
+        .grid-span-columns img:nth-child(6) {
+            grid-column: span 5;
+        }
+    </style>
+    <div class="grid-span-columns">
+        <img src="images/22m.jpg" alt="Sample photo">
+        <img src="images/23m.jpg" alt="Sample photo">
+        <img src="images/24m.jpg" alt="Sample photo">
+        <img src="images/25m.jpg" alt="Sample photo">
+        <img src="images/15m.jpg" alt="Sample photo">
+        <img src="images/17l.jpg" alt="Sample photo">
+        <img src="images/27m.jpg" alt="Sample photo">
+        <img src="images/28m.jpg" alt="Sample photo">
+        <img src="images/26m.jpg" alt="Sample photo">
+        <img src="images/30m.jpg" alt="Sample photo">
+        <img src="images/31m.jpg" alt="Sample photo">
+    </div>
+
+    <h2>Fluid</h2>
+    <style>
+        .grid-span-columns-fluid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 10px;
+            align-items: start;
+            justify-items: center;
+        }
+
+        .grid-span-columns-fluid img {
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+            max-width: 100%;
+        }
+
+        .grid-span-columns-fluid img:nth-child(6) {
+            grid-column: span 5;
+        }
+    </style>
+    <div class="grid-span-columns-fluid">
+        <img src="images/22m.jpg" alt="Sample photo">
+        <img src="images/23m.jpg" alt="Sample photo">
+        <img src="images/24m.jpg" alt="Sample photo">
+        <img src="images/25m.jpg" alt="Sample photo">
+        <img src="images/15m.jpg" alt="Sample photo">
+        <img src="images/17l.jpg" alt="Sample photo">
+        <img src="images/27m.jpg" alt="Sample photo">
+        <img src="images/28m.jpg" alt="Sample photo">
+        <img src="images/26m.jpg" alt="Sample photo">
+        <img src="images/30m.jpg" alt="Sample photo">
+        <img src="images/31m.jpg" alt="Sample photo">
+    </div>
+
+
+    <h2>Span 3 columns, 2 rows</h2>
+    <style>
+        .grid-span3col {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            grid-gap: 10px;
+            align-items: start;
+            justify-items: center;
+            margin: auto;
+            width: 540px;
+        }
+
+        .grid-span3col img {
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+            max-width: 100%;
+        }
+
+        .grid-span3col img:nth-child(2) {
+            grid-column: span 3;
+            grid-row: span 2;
+        }
+    </style>
+    <main class="grid-span3col">
+        <img src="images/22m.jpg" alt="Sample photo">
+        <img src="images/23l.jpg" alt="Sample photo">
+        <img src="images/24m.jpg" alt="Sample photo">
+        <img src="images/6m.jpg" alt="Sample photo">
+        <img src="images/1m.jpg" alt="Sample photo">
+        <img src="images/25m.jpg" alt="Sample photo">
+        <img src="images/15m.jpg" alt="Sample photo">
+        <img src="images/27m.jpg" alt="Sample photo">
+        <img src="images/28m.jpg" alt="Sample photo">
+        <img src="images/26m.jpg" alt="Sample photo">
+    </main>
+</body>
+
+</html>
