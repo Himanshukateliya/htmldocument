@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+    <style>
+        * {
+            border: 1px solid;
+        }
+
+        #page {
+            display: grid;
+            /* grid-template-rows: 50px 0fr 60px;
+            grid-template-columns: 150px; */
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            height: 450px;
+
+        }
+
+        .align {
+            text-align: center;
+            vertical-align: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* margin: 15px auto; */
+
+        }
+
+        header {
+            grid-column: 1/2;
+            background-color: black;
+            color: white;
+            height: 50px;
+        }
+
+        .menu {
+            grid-column: 2/5;
+            background-color: red;
+            color: white;
+        }
+
+        .hero {
+            color: white;
+            background-color: #4c86c6;
+            grid-column: 1/5;
+            height: 150px;
+        }
+
+        .main {
+            grid-column: 1/3;
+            grid-row: 3/5;
+            background-color: #24344b;
+            color: white;
+            height: 150px;
+
+        }
+
+        .bann {
+            grid-column: 4/5;
+            /* grid-row: 3/7; */
+            height: 75px;
+            background-color: #c1e4e6;
+            color: black;
+        }
+
+
+        .img {
+            grid-column: 4/5;
+            height: 75px;
+            background-color: #4dbd97;
+            color: black;
+        }
+
+        footer {
+            grid-column: 1/5;
+            height: 100px;
+            color: black;
+            background-color: #ffd169;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="page">
+        <header class="align ">HEADER</header>
+        <main class="menu align ">MENU</main>
+        <main class="hero align ">HERO</main>
+        <main class="main align ">MAIN</main>
+        <nav class="bann align ">BANNER</nav>
+        <nav class="img align ">IMAGE</nav>
+        <footer class="align ">EXTRA</footer>
+    </section>
+</body>
+
+</html>

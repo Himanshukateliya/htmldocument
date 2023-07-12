@@ -1,0 +1,121 @@
+* {
+    border: 1px solid;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    /* gap: 5px; */
+    grid-auto-rows: minmax(100px, auto);
+
+}
+
+img {
+    /* object-fit: fill; */
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.one {
+
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+
+.two {
+
+    grid-row: 1;
+    grid-column: 3/5;
+}
+
+.three {
+
+    grid-row: 1;
+    grid-column: 5;
+}
+
+.four {
+
+    grid-row: 1/3;
+    grid-column: 6/8;
+}
+
+.five {
+    grid-row: 1/3;
+    grid-column: 8;
+}
+
+.six {
+    grid-row: 2;
+    grid-column: 3/5;
+}
+
+.seven {
+    grid-row: 2/4;
+    grid-column: 5;
+}
+
+.eight {
+    grid-row: 3/5;
+    grid-column: 1;
+}
+
+.nine {
+    grid-row: 3/5;
+    grid-column: 2/4;
+}
+
+.ten {
+    grid-row: 3;
+    grid-column: 4;
+}
+
+.eleven {
+    grid-row: 3/5;
+    grid-column: 6/8;
+}
+
+.twelve {
+    grid-row: 3;
+    grid-column: 8;
+}
+
+/* 
+.thirteen {
+    grid-row: ;
+    grid-column: ;
+}
+
+.fourteen {
+    grid-row: ;
+    grid-column: ;
+} */
+
+.fifteen {
+    grid-row: 4/6;
+    grid-column: 8;
+}
+
+.sixteen {
+    grid-row: 5;
+    grid-column: 1/3;
+}
+
+.seventeen {
+    grid-row: 5;
+    grid-column: 3/5;
+}
+
+.eighteen {
+    grid-row: 5;
+    grid-column: 5/7;
+}
+
+.nineteen {
+    grid-row: 5;
+    grid-column: 7;
+}
