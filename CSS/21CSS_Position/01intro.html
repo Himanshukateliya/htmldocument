@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div[class*="box"] {
+            height: 200px;
+            width: 200px;
+            background-color: teal;
+            color: white;
+            font-size: 25px;
+        }
+
+        .box-static {
+            position: static;
+            top: 10px;
+            left: 50px;
+        }
+
+        .box-relative {
+            position: relative;
+            top: 10px;
+            left: 50px;
+        }
+
+        /* .box-absolute{ position: absolute; top: 10px; left: 50px;} */
+        /* .box-fixed{ position:fixed; top: 10px; left: 350px;}  */
+        .box-sticky {
+            position: sticky;
+            top: 10px;
+            left: 100%;
+        }
+
+        .parent {
+            height: 1000px;
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>position: static;</li>
+        <li>position: relative;</li>
+        <li>position: absolute;</li>
+        <li>position: fixed;</li>
+        <li>position: sticky;</li>
+    </ul>
+    <blockquote>
+
+        <p>The position CSS property sets how an element is positioned in a document. The top, right, bottom, and left
+            properties determine the final location of positioned elements.</p>
+        <h3>Static</h3>
+        <p>The element is positioned according to the normal flow of the document. The <b>top, right, bottom, left, and
+                z-index</b> properties have <b>no effect</b>. This is the default value.</p>
+        <div class="box-static">box-static</div>
+        <h3>Relative</h3>
+        <p>The element is positioned according to the normal flow of the document, and then offset relative to itself
+            based on the values of top, right, bottom, and left. The offset does not affect the position of any other
+            elements; thus, the space given for the element in the page layout is the same as if position were static.
+        </p>
+        <div class="box-relative">box-relative</div>
+        <p> This value creates a new stacking context when the value of z-index is not auto. Its effect on
+            table-*-group, table-row, table-column, table-cell, and table-caption elements is undefined.</p>
+        <h3>Absolute</h3>
+        <p>The element is removed from the normal document flow, and no space is created for the element in the page
+            layout. The element is positioned relative to its closest positioned ancestor (if any) or to the initial
+            containing block. Its final position is determined by the values of top, right, bottom, and left.</p>
+        <p>This value creates a new stacking context when the value of z-index is not auto. The margins of absolutely
+            positioned boxes do not collapse with other margins.</p>
+        <div class="box-absolute">box-absolute</div>
+
+        <h3>Fixed</h3>
+        <p>The element is removed from the normal document flow, and no space is created for the element in the page
+            layout. The element is positioned relative to its initial containing block. Its final position is determined
+            by the values of top, right, bottom, and left.</p>
+        <p>This value always creates a new stacking context. In printed documents, the element is placed in the same
+            position on every page.</p>
+        <div class="box-fixed">box-fixed</div>
+        <h3>Sticky</h3>
+        <p>The element is positioned according to the normal flow of the document, and then offset relative to its
+            nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related
+            elements, based on the values of top, right, bottom, and left. The offset does not affect the position of
+            any other elements.</p>
+        <p>This value always creates a new stacking context. Note that a sticky element "sticks" to its nearest ancestor
+            that has a "scrolling mechanism" (created when overflow is hidden, scroll, auto, or overlay), even if that
+            ancestor isn't the nearest actually scrolling ancestor.</p>
+        <div class="parent">
+            <div class="box-sticky">box-sticky</div>
+        </div>
+    </blockquote>
+</body>
+
+</html>
