@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Raleway-ExtraBold';
+    src: url('../font/Raleway-ExtraBold.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+
+
+}
+
+.container {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    font-size: 70px;
+    margin-top: 30px;
+    /* justify-content: space-between; */
+}
+
+.container span {
+    color: white;
+    font-family: 'Raleway-ExtraBold';
+    font-weight: 900;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+
+}
+
+.js::before {
+    border-left: 7px solid blue;
+    content: "";
+    padding-left: 15px;
+    /* color: blue; */
+    /* width: 5px; */
+}
+
+.css::before {
+    border-left: 7px solid blue;
+    content: "";
+    padding-left: 15px;
+    /* color: blue; */
+}
+
+.html,
+.css,
+.js {
+    padding: 30px;
+}
