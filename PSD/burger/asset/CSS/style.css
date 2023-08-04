@@ -1,0 +1,537 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "archivo";
+    src: url("../font/Archivo-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("../font/Nunito-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../font/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../font/Poppins-Regular.ttf");
+}
+
+.container {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+.align {
+    align-items: center;
+}
+
+[class *=col_] {
+    width: 100%;
+}
+
+.sec_1 {
+    background-image: url("../image/bg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 0;
+    min-height: 720px;
+}
+
+.links ul li {
+    display: inline-block;
+}
+
+.links ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    font-family: "Poppins";
+    padding: 0 20px;
+}
+
+.sec1_text h1 {
+    font-size: 25px;
+    color: #ffffff;
+    font-family: "Archivo";
+    width: 40%;
+    padding-top: 50px;
+}
+
+.sec1_text p {
+    padding: 50px 0;
+    font-size: 32px;
+    color: #ffffff;
+    font-family: "Nunito";
+    width: 45%;
+}
+
+.btn button {
+    border-radius: 32px;
+    background-color: #f64b3c;
+    border: none;
+    font-size: 20px;
+    padding: 10px 50px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+/* sec2 */
+
+.sec_2 {
+    background-color: #f6eedf;
+    padding: 40px 0;
+}
+
+.sec2_text h2 {
+    font-size: 64px;
+    color: #f64b3c;
+    font-family: "Archivo";
+    text-align: center;
+
+}
+
+.sec2_text p {
+    font-size: 25px;
+    text-align: center;
+    color: #f64b3c;
+    font-family: "Montserrat";
+    width: 54%;
+    margin: 0 auto;
+    padding: 20px 0;
+
+}
+
+.card img {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.card h3 {
+    font-size: 33px;
+    padding: 20px 0;
+    color: #f64b3c;
+    font-family: "Archivo";
+    text-align: center;
+}
+
+.card p {
+    font-size: 25px;
+    color: #f64b3c;
+    font-family: "Nunito";
+    text-align: center;
+}
+
+/* sec3 */
+
+.sec_3 {
+    background-color: #f64b3c;
+    padding: 40px 0;
+}
+
+.card_1 img {
+    border-radius: 50%;
+    width: 100%;
+
+}
+
+.sec3_text h2 {
+    font-size: 75px;
+    color: #ffffff;
+    font-family: "Archivo";
+}
+
+.sec3_text p {
+    padding: 40px 0;
+    font-size: 30px;
+    color: #ffffff;
+    width: 82%;
+    font-family: "Nunito";
+}
+
+.btn_1 button {
+    border-radius: 32px;
+    color: #f64b3c;
+    border: none;
+    font-size: 20px;
+    padding: 10px 50px;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+/* sec4 */
+
+.sec_4 {
+    background-color: #f6eedf;
+    padding: 40px 0;
+}
+
+.card_2 img {
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.sec4_text h2 {
+    font-size: 75px;
+    color: #f64b3c;
+    font-family: "Archivo";
+}
+
+.sec4_text p {
+    padding: 40px 0;
+    font-size: 30px;
+    color: #f64b3c;
+    width: 82%;
+    font-family: "Nunito";
+}
+
+.btn_2 button {
+    border-radius: 32px;
+    background-color: #f64b3c;
+    border: none;
+    font-size: 20px;
+    padding: 10px 50px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+/* sec5 */
+
+.sec_5 {
+    background-color: #f64b3c;
+    padding: 40px 0;
+
+}
+
+.sec5_text h3 {
+    font-size: 62px;
+    color: #ffffff;
+    font-family: "Archivo";
+    text-align: center;
+}
+
+.sec5_text p {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 25px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 20px 0;
+}
+
+.card_3 {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card3_text h2 {
+    font-size: 80px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: "Archivo";
+    text-align: center;
+}
+
+.card3_text p {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: block;
+    margin: 0 auto;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+/* sec6 */
+
+.sec_6 {
+    background-color: #f6eedf;
+    padding: 40px 0;
+}
+
+.sec6_text h2 {
+    font-size: 75px;
+    color: #f64b3c;
+    font-family: "Archivo";
+    text-align: center;
+}
+
+.card_4 {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    margin: 100px 0;
+    border-radius: 7px;
+}
+
+.card_4 h3 {
+    font-size: 33px;
+    color: #f64b3c;
+    font-family: "Archivo";
+    text-align: center;
+    padding: 20px 0;
+}
+
+.card_4 h4 {
+    font-size: 33px;
+    color: #f64b3c;
+    font-family: "Archivo";
+    text-align: center;
+}
+
+.card_4 p {
+    font-size: 20px;
+    color: #f64b3c;
+    font-family: "Montserrat";
+    width: 70%;
+    padding: 20px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn_3 button {
+    border-radius: 32px;
+    background-color: #f64b3c;
+    border: none;
+    font-size: 20px;
+    padding: 10px 50px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+
+/* sec7 */
+.sec_7 {
+    background-image: url("../image/img6.png");
+    background-blend-mode: lighten;
+    background-color: #f64b3c;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 720px;
+}
+
+.sec7_text p {
+    font-size: 36px;
+    color: #ffffff;
+    font-family: "Archivo";
+    text-align: center;
+    width: 52%;
+    margin: 0 auto;
+    padding-top: 20rem;
+}
+
+.sec7_text h3 {
+    font-size: 45px;
+    padding: 4rem;
+    color: #ffffff;
+    font-family: "Calistoga";
+    text-align: center;
+}
+
+/* sec8 */
+.sec_8 {
+    background-color: #f6eedf;
+    padding: 100px 0;
+}
+
+.sec8_text h2 {
+    font-size: 25px;
+    color: #f64b3c;
+    font-family: "Archivo";
+    text-align: center;
+}
+
+.sec8_text p {
+    font-size: 30px;
+    width: 56%;
+    margin: 0 auto;
+    padding: 40px 0;
+    color: #f64b3c;
+    font-family: "Nunito";
+    text-align: center
+}
+
+.search {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.search input {
+    width: 60%;
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+}
+
+
+.search button {
+    border-radius: 0 20px 20px 0;
+    padding: 7px 15px;
+    margin-left: -5px;
+    border: none;
+    background-color: #f64b3c;
+    font-family: "Nunito";
+    color: white;
+    font-size: 18px;
+}
+
+/* footer */
+.footer {
+    background-color: #303030;
+    width: 100%;
+    padding: 80px 0;
+}
+
+
+
+.foot_text {
+    color: #fff;
+}
+
+.foot_text h2 {
+    font-size: 31px;
+
+}
+
+.foot_text p {
+    padding: 30px 0;
+    font-size: 24px;
+    width: 74%;
+}
+
+.ico ul li {
+    display: inline-block;
+}
+
+.ico ul li a {
+    border-radius: 50%;
+    font-size: 25px;
+    background-color: #fff;
+    color: black;
+    margin: 0 5px;
+    height: 40px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    width: 40px;
+    justify-content: center;
+
+}
+
+.about h2 {
+    padding-bottom: 40px;
+}
+
+.about a {
+    color: #fff;
+    font-size: 25px;
+}
+
+.about h2 {
+    font-size: 33px;
+    color: #fff;
+}
+
+.about li {
+    list-style: none;
+}
+
+.about ul li a {
+    font-size: 25px;
+    line-height: 44px;
+    text-decoration: none;
+
+}
+
+
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+
+    .card_1 img {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+
+    .sec8_text h2 {
+        font-size: 75px;
+    }
+
+    .sec1_text h1 {
+        font-size: 75px;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+
+    .col_20 {
+        width: 20%;
+    }
+
+    .col_30 {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+
+    .col_50 {
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px;
+    }
+}
