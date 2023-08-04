@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+    /* font-weight: 400; */
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col_100 {
+    width: 100%;
+}
+
+.col-25 {
+    width: 25%;
+    padding: 10px;
+
+}
+
+.right {
+    float: right !important;
+}
+
+.align {
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+}
+
+nav {
+    background: #fff;
+
+}
+
+
+.logo a {
+    color: black;
+    text-decoration: none;
+    letter-spacing: 5px;
+    margin: 1rem 15rem 1rem 0rem;
+    display: inline-block;
+}
+
+
+.right {
+    margin: 15px auto;
+}
+
+.right a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+.right a:hover {
+    background-color: #c4c4c4;
+    border-radius: 20px;
+
+}
+
+#hk {
+
+    background-image: url("./image/architect.jpg");
+    background-size: 100%, 90%;
+    background-repeat: no-repeat;
+    height: 750px;
+}
+
+.display {
+    width: 100%;
+}
+
+.home_text {
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.home_text h1 {
+
+    margin: 0 auto;
+    padding: 320px 0 0 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+.home_text span {
+    color: #ffff;
+    background-color: #0000;
+}
+
+.home_text h1 span b {
+    padding: 15px;
+}
+
+.opacity {
+    opacity: 0.60;
+}
+
+.row-padding {
+    justify-content: space-between;
+    display: flex;
+}
+
+.black {
+    color: #fff !important;
+    background-color: #000 !important;
+}
+
+.padding {
+    padding: 8px 10px !important;
+}
+
+.padding-32 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+}
+
+.img1 {
+    width: 100%;
+    height: 250px;
+    background-image: url("image/house1.jpg");
+    background-size: cover;
+}
+
+.img2 {
+    width: 100%;
+    height: 250px;
+    background-image: url("image/house2.jpg");
+    background-size: cover;
+}
+
+.img3 {
+    width: 100%;
+    height: 250px;
+    background-image: url("image/house3.jpg");
+    background-size: cover;
+}
+
+.img4 {
+    width: 100%;
+    height: 250px;
+    background-image: url("image/house4.jpg");
+    background-size: cover;
+}
+
+.img5 {
+    width: 100%;
+    height: 250px;
+    background-image: url("image/house5.jpeg");
+    background-size: cover;
+}
+
+.img6 {
+    width: 100%;
+    height: 250px;
+    background-image: url("image/house6.jpeg");
+    background-size: cover;
+}
+
+.img7 {
+    width: 100%;
+    height: 250px;
+    background-image: url("image/house7.jpeg");
+    background-size: cover;
+}
+
+.img8 {
+    width: 100%;
+    height: 250px;
+    background-image: url("image/house8.jpeg");
+    background-size: cover;
+}
+
+
+
+.img1 p,
+.img2 p,
+.img3 p,
+.img4 p,
+.img5 p,
+.img6 p,
+.img7 p,
+.img8 p {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+
+.img1 img {
+    /* display: inline-block; */
+    width: 95%;
+}
+
+/* .container {
+    padding: 0.01em 16px;
+} */
+
+
+.padding-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: #c4c4c4;
+    margin: 30px 0
+}
+
+.row-padding>.col {
+    padding: 0 8px;
+}
+
+.row>.col {
+    padding: 0 8px;
+    justify-content: space-between;
+}
+
+.margin-bottom {
+    margin-bottom: 10px !important;
+}
+
+.input {
+    width: 92%;
+    padding: 15px;
+    margin: 10px;
+}
+
+.button {
+    width: 158px;
+    /* margin: 20px; */
+    padding: 11px;
+
+}
+
+h3 {
+    padding: 10px;
+}
+
+.comann1 img {
+    width: 50%;
+    height: 287px;
+    padding: 10px;
+
+}
+
+.btn {
+    display: block;
+    background-color: #c4c4c4;
+    text-align: center;
+    width: 100%;
+    padding: 7px 10px;
+    border: none;
+    color: #000;
+}
+
+.btn:hover {
+    background: #46b8da;
+}
+
+
+.comann1 p {
+    padding: 10px;
+}
+
+
+
+.footer p {
+    background-color: #000;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.footer p a {
+    color: #fff;
+}
