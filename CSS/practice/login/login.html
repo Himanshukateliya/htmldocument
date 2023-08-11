@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <form action="" method="post">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" name="" id="pwd" placeholder="password" required>
+
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox" name="" id="chk">
+                    Remember me
+                </label>
+                <a href="#">Forgot Password</a>
+            </div>
+
+            <button class="btn" type="submit">Login</button>
+
+            <div class="register-link">
+                <p>Don't have account? <a href="#">Register</a></p>
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+        const pwd = document.getElementById("pwd");
+        const chk = document.getElementById("chk");
+
+        chk.onchange = function (e) {
+            pwd.type = chk.checked ? "text" : "password";
+        };
+
+
+    </script>
+
+</body>
+
+</html>
