@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // let kuchbhi number;
+        // let kuchbhi:number;
+        let kuchbhi = prompt("Please Enter the SUM of 1+1 =")
+        // console.log(kuchbhi);
+        // if (kuchbhi == 2) {
+        //     console.log("inside if");
+        // }
+        console.log(typeof kuchbhi);
+        data = parseFloat(kuchbhi)
+        console.log(data);
+        console.log(typeof data);
+        intData = parseInt(kuchbhi)
+        console.log(typeof intData);
+        if (kuchbhi > 1 && kuchbhi <= 2) {
+            console.log("inside if");
+            if (confirm("are u ready for the next step")) {
+                if (confirm("are you sure???")) {
+                    if (confirm("are you double sure???")) {
+                        // console.log("are you sure???");
+                        alert("Thank you bye....");
+                    } else {
+                        alert("kyu click kiya??");
+                    }
+                } else {
+                    console.log("get out???");
+
+                }
+            } else {
+                console.log("inside second else");
+            }
+        } else {
+            console.log("inside else");
+        }
+        if (marks > 0 && marks <= 100) {
+            if (marks >= 50 && marks < 60) {
+                console.log("pass class");
+            } else if(marks >= 60 && marks < 70){
+                console.log("SECOND class");
+            }
+        }
+        keys = 2
+        switch (keys) {
+            case "1":
+                console.log("Gujarati");
+                break;
+            case "2":
+                console.log("Hindi");
+                break;
+            case "3":
+                console.log("English");
+                break;
+        
+            default:
+                break;
+        }
+
+    </script>
+</body>
+
+</html>
