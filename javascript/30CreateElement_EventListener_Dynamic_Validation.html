@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post">
+        <table>
+            <tr>
+                <td> <label for="username">User name</label> </td>
+                <td><input type="text" class="required" name="username" id="username"></td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td><input type="text" class="required" name="password" id="password"></td>
+            </tr>
+            <tr>
+                <td>confirm password</td>
+                <td><input type="text" class="required" name="cpassword" id="cpassword"></td>
+            </tr>
+            <tr>
+                <td>new field</td>
+                <td><input type="text" name="nfield" id="nfield"></td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td><input type="text" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>mobile</td>
+                <td><input type="text" class="" name="mobile" id="mobile" required pattern="[0-9]+" minlength="10"
+                        maxlength="10" title="please enter number only"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="btn" id="btn"></td>
+            </tr>
+        </table>
+    </form>
+    <script src="customrequirevalidation.js"></script>
+    <!-- <script>
+        let requiredFileds = document.getElementsByClassName("required")
+        // let requiredFileds = document.getElementsByClassName("required").add
+        // console.log(requiredFileds);
+        // console.log(requiredFileds.length);
+        // requiredFileds.forEach(element => {
+        //     console.log(element);
+        // });
+
+        for (let index = 0; index < requiredFileds.length; index++) {
+            console.log("called inside loop");
+            // console.log(requiredFileds[index]);
+            requiredFileds[index].addEventListener("blur", function (event) {
+                // console.log("called inside blur");
+                // console.log(event);
+                // console.log(this);
+                // console.log(this.value);
+                let div = document.getElementById("data")
+                var closeSpan = document.createElement("span");
+                closeSpan.setAttribute("id", "errorspn");
+                closeSpan.textContent = "This field is required";
+                // console.log(this.parent);
+                // console.log(requiredFileds[index].parentElement.appendChild(element));
+                if (this.value == "") {
+                    console.log("This field is required",requiredFileds[index].nextSibling);
+                    if (requiredFileds[index].nextSibling == null) {
+                        requiredFileds[index].parentElement.appendChild(closeSpan)
+                        
+                        console.log("called inside if");
+                    }
+                    // document.getElementById("disp").appendChild(element)
+
+                }
+            })
+        }
+    </script> -->
+</body>
+
+</html>
