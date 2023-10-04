@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post">
+        <table>
+            <tr>
+                <td> <label for="username">User name</label> </td>
+                <td><input type="text" class="" name="username" id="username"></td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td><input type="text" class="" name="password" id="password"></td>
+            </tr>
+            <tr>
+                <td>confirm password</td>
+                <td><input type="text" class="" name="cpassword" id="cpassword"></td>
+            </tr>
+            <tr>
+                <td>new field</td>
+                <td><input type="text" name="nfield" id="nfield"></td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td><input type="text" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>mobile</td>
+                <td><input type="text" class="" name="mobile" id="mobile" required pattern="[0-9]+" minlength="10"
+                        maxlength="10" title="please enter number only"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="btn" id="btn"></td>
+            </tr>
+        </table>
+    </form>
+    <div id="data"></div>
+
+    <script>
+        function checkreq(e) {
+            let div = document.getElementById("data")
+            var closeSpan = document.createElement("span");
+            closeSpan.setAttribute("id", "errorspn");
+            closeSpan.textContent = "This field is required";
+            if (e.value == "") {
+                div.appendChild(closeSpan);
+                console.log("inside else");
+            } else {
+                console.log("inside else");
+                SpanElement = document.getElementById("errorspn")
+                console.log(SpanElement);
+                div.removeChild(SpanElement);
+            }
+            // let p = document.createElement("p");
+        }
+
+    </script>
+
+</body>
+
+</html>
