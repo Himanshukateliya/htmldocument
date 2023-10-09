@@ -1,0 +1,130 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <form action="">
+        <table border="1px" solid black align="center" width="25%">
+            <tr>
+                <td>name:</td>
+                <td><input type="text" placeholder="name:" id="name"><input type="checkbox" id="name"></td>
+               
+            </tr>
+            <tr>
+                <td>username:</td>
+                <td><input type="text" placeholder="username:" id="username"><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>password:</td>
+                 <td><input type="text" placeholder="password:" id="password"><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>email:</td>
+                <td><input type="text" placeholder="email:" id="email"><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>phone-no:</td>
+                <td><input type="text" placeholder="phone-no:" id="phone-no"><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>address:</td>
+                <td><input type="text" placeholder="address:" id="address"><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>
+                   <input type="button" value="select-all" onclick="select()"><input type="checkbox">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function select(params) {
+            
+            let name = document.getElementById("name");
+            let username = document.getElementById("username");
+            let password = document.getElementById("password");
+
+            for (let index = 0; index < name.length; index++) {
+               
+                if (name[index] == 'checkbox') {
+                    name.checked = true;
+                }
+            }
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <table border="1px" solid black align="center" width="25%">
+            <tr>
+                <td>name:</td>
+                <td><input type="checkbox"></td>
+
+            </tr>
+            <tr>
+                <td>username:</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>password:</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>email:</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>phone-no:</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>address:</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Select All" onclick="Toggle()">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function Toggle() {
+            let checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach((checkbox) => {
+                checkbox.checked = !checkbox.checked;
+            });
+
+        }
+
+        // function deselectAll() {
+        //     let checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        //     checkboxes.forEach((checkbox) => {
+        //         checkbox.checked = false;
+        //     });
+        // }
+    </script>
+</body>
+
+</html>
