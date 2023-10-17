@@ -1,0 +1,6 @@
+function coutain some functality {
+
+user difine fuction
+defualt function
+
+}
