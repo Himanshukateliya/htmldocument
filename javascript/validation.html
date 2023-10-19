@@ -1,0 +1,496 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #error-message {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="login-form" onsubmit="return validateForm()">
+            <input type="text" id="username" name="username" placeholder="Username">
+            <br>
+            <input type="password" id="password" name="password" placeholder="Password">
+            <br>
+            <input type="email" name="email" id="email" placeholder="enter email id">
+            <br>
+            <input type="tel" name="tel" id="tel" placeholder="enter number">
+            <button type="submit">Login</button>
+        </form>
+        <p id="error-message"></p>
+    </div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var number = document.getElementById("tel").value;
+            var errorMessage = document.getElementById("error-message");
+
+            // Basic validation: check if fields are empty
+            if (username.trim() === "" || password.trim() === "") {
+                errorMessage.textContent = "Both username and password are required.";
+                return false; // Prevent form submission
+            }
+            if (username.length <= 4) {
+                errorMessage.textContent = "username should be more than 8 characters.";
+                alert("username is too short (less than 4 characters)."); // Show alert message
+                return false; // Prevent form submission
+            }
+            // Check if the password length is not more than 8 characters
+            if (password.length <= 8) {
+                errorMessage.textContent = "Password should be more than 8 characters.";
+                alert("Password is too short (less than 8 characters)."); // Show alert message
+                return false; // Prevent form submission
+            }
+
+            if (tel.length <= 10 && tel.length >= 10) {
+                errorMessage.textContent = "tel number should be more than 8 characters.";
+                alert("tel number is too short (less than 10 characters)."); // Show alert message
+                return false; // Prevent form submission
+            }
+
+
+
+            return true;
+
+            function getdata(h) {
+                var RegEx = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9_\.\-])+\.)+([a-zA-Z0-9]{2,4})+$/
+                console.log(RegEx.test(h.value));
+            }
+        }
+    </script>
+</body>
+
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #error-message {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="login-form" onsubmit="return validateForm()">
+            <input type="text" id="username" name="username" placeholder="Username">
+            <br>
+            <input type="password" id="password" name="password" placeholder="Password">
+            <br>
+            <input type="email" name="email" id="email" placeholder="Enter email">
+            <br>
+            <input type="number" name="tel" id="tel" placeholder="Enter phone number (10 digits)">
+            <button type="submit">Login</button>
+        </form>
+        <p id="error-message"></p>
+    </div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var tel = document.getElementById("tel").value;
+            var errorMessage = document.getElementById("error-message");
+
+            // Basic validation: check if fields are empty
+            if (username.trim() === "" || password.trim() === "" || tel.trim() === "") {
+                errorMessage.textContent = "All fields are required.";
+                return false; // Prevent form submission
+            }
+
+            // Check username length
+            if (username.length < 4) {
+                errorMessage.textContent = "Username should be at least 4 characters.";
+                return false;
+            }
+
+            // Check password length
+            if (password.length < 8) {
+                errorMessage.textContent = "Password should be at least 8 characters.";
+                return false;
+            }
+
+            // Check if tel is a valid 10-digit number
+            if (!/^\d{10}$/.test(tel)) {
+                errorMessage.textContent = "Phone number should be a 10-digit number.";
+                return false;
+            }
+
+            // Additional email validation
+            var email = document.getElementById("email").value;
+            if (!isValidEmail(email)) {
+                errorMessage.textContent = "Invalid email format.";
+                return false;
+            }
+
+            return true;
+        }
+
+        // Function to validate email format using a regular expression
+        function isValidEmail(email) {
+            var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return emailRegex.test(email);
+        }
+    </script>
+</body>
+
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #error-message {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="login-form" onsubmit="return validateForm()">
+            <input type="text" id="username" name="username" placeholder="Username">
+            <br>
+            <input type="password" id="password" name="password" placeholder="Password">
+            <br>
+            <input type="email" name="email" id="email" placeholder="Enter email">
+            <br>
+            <input type="tel" name="tel" id="tel" placeholder="Enter phone number (up to 10 digits)" maxlength="10"
+                acc>
+            <button type="submit">Login</button>
+        </form>
+        <p id="error-message"></p>
+    </div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var tel = document.getElementById("tel").value;
+            var errorMessage = document.getElementById("error-message");
+
+            // Basic validation: check if fields are empty
+            if (username.trim() === "" || password.trim() === "" || tel.trim() === "") {
+                errorMessage.textContent = "All fields are required.";
+                return false; // Prevent form submission
+            }
+
+            // Check username length
+            if (username.length < 4) {
+                errorMessage.textContent = "Username should be at least 4 characters.";
+                return false;
+            }
+
+            // Check password length
+            if (password.length < 8) {
+                errorMessage.textContent = "Password should be at least 8 characters.";
+                return false;
+            }
+
+            // Check if tel is a valid 10-digit number
+            if (tel.length !== 10 || !/^\d{10}$/.test(tel)) {
+                errorMessage.textContent = "Phone number should be a valid 10-digit number.";
+                return false;
+            }
+
+            // Additional email validation
+            var email = document.getElementById("email").value;
+            if (!isValidEmail(email)) {
+                errorMessage.textContent = "Invalid email format.";
+                return false;
+            }
+
+            return true;
+        }
+
+        // Function to validate email format using a regular expression
+        function isValidEmail(email) {
+            var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return emailRegex.test(email);
+        }
+    </script>
+</body>
+
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #error-message {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="login-form" onsubmit="return validateForm()">
+            <input type="text" id="username" name="username" placeholder="Username">
+            <br>
+            <input type="password" id="password" name="password" placeholder="Password">
+            <br>
+            <input type="email" name="email" id="email" placeholder="Enter email">
+            <br>
+            <input type="tel" name="tel" id="tel" placeholder="Enter phone number (up to 10 digits)" maxlength="10"
+                oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+            <button type="submit">Login</button>
+        </form>
+        <p id="error-message"></p>
+    </div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var tel = document.getElementById("tel").value;
+            var errorMessage = document.getElementById("error-message");
+
+            if (username.trim() === "" || password.trim() === "" || tel.trim() === "") {
+                errorMessage.textContent = "All fields are required.";
+                alert("All fields are required.");
+                return false;
+            }
+
+            if (username.length < 4) {
+                errorMessage.textContent = "Username should be at least 4 characters.";
+                return false;
+            }
+
+            if (password.length < 8) {
+                errorMessage.textContent = "Password should be at least 8 characters.";
+                return false;
+            }
+
+            if (tel.length !== 10 || !/^\d{10}$/.test(tel)) {
+                errorMessage.textContent = "Phone number should be a valid 10-digit number.";
+                return false;
+            }
+            var email = document.getElementById("email").value;
+            if (!isValidEmail(email)) {
+                errorMessage.textContent = "Invalid email format.";
+                return false;
+            }
+
+            return alert("congratulation tame mumbai avo cho");
+
+        }
+
+        function isValidEmail(email) {
+            var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return emailRegex.test(email);
+        }
+    </script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #error-message {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="login-form" onsubmit="return validateForm()">
+            <!-- Username input -->
+            <input type="text" id="username" name="username" placeholder="Username">
+            <br>
+            <!-- Password input -->
+            <input type="password" id="password" name="password" placeholder="Password">
+            <br>
+            <!-- Email input -->
+            <input type="email" name="email" id="email" placeholder="Enter email">
+            <br>
+            <!-- Phone number input -->
+            <input type="tel" name="tel" id="tel" placeholder="Enter phone number (up to 10 digits)" maxlength="10"
+                oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+            <br>
+            <!-- Submit button -->
+            <button type="submit">Login</button>
+        </form>
+        <!-- Error message -->
+        <p id="error-message"></p>
+    </div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var tel = document.getElementById("tel").value;
+            var errorMessage = document.getElementById("error-message");
+
+            // Reset error message
+            errorMessage.textContent = "";
+
+            // Check if username is empty
+            if (username.trim() === "") {
+                errorMessage.textContent = "Username is required.";
+                return false;
+            }
+
+            // Check if password is empty
+            if (password.trim() === "") {
+                errorMessage.textContent = "Password is required.";
+                return false;
+            }
+
+            // Check if tel is empty
+            if (tel.trim() === "") {
+                errorMessage.textContent = "Phone number is required.";
+                return false;
+            }
+
+            // Check username length
+            if (username.length < 4) {
+                errorMessage.textContent = "Username should be at least 4 characters.";
+                return false;
+            }
+
+            // Check password length
+            if (password.length < 8) {
+                errorMessage.textContent = "Password should be at least 8 characters.";
+                return false;
+            }
+
+            // Check if tel is a valid 10-digit number
+            if (tel.length !== 10 || !/^\d{10}$/.test(tel)) {
+                errorMessage.textContent = "Phone number should be a valid 10-digit number.";
+                return false;
+            }
+
+            // Additional email validation
+            var email = document.getElementById("email").value;
+            if (!isValidEmail(email)) {
+                errorMessage.textContent = "Invalid email format.";
+                return false;
+            }
+
+            // If all validations pass, allow form submission
+            return alert("congratulation tame mumbai avo cho");
+        }
+
+        // Function to validate email format using a regular expression
+        function isValidEmail(email) {
+            var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return emailRegex.test(email);
+        }
+    </script>
+</body>
+
+</html>
