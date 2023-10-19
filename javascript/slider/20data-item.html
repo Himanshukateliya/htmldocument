@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="images/1.jfif" id="img" alt="">
+    <button class="classname" data-count="1" id="btn">Next</button>
+    <script>
+        document.getElementById("btn").addEventListener("click", function () {
+            const btnNext = document.getElementById("btn")
+            const nextImg = parseInt(btnNext.dataset.count)+1;
+            btnNext.dataset.count = nextImg
+            console.log(nextImg);
+            console.log("images/"+nextImg+".jfif");
+            let ImgData = document.querySelector("img");
+            ImgData.setAttribute("src", "images/"+nextImg+".jfif")
+        })
+    </script>
+</body>
+</html>
