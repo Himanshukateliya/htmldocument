@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: 400px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" style="border: 2px solid red;">
+        <table style="border: 2px solid red;">
+            <tr>
+                <td> <label for="username">User name</label> </td>
+                <td><input type="text" class="input-field" name="username" id="username" required></td>
+            </tr>
+            <tr>
+                <td><label for="first-name">First name</label></td>
+                <td><input type="text" class="" name="first name" id="first-name"></td>
+            </tr>
+            <tr>
+                <td><label for="last-name">Last name</label></td>
+                <td><input type="text" class="" name="last name" id="last-name"></td>
+            </tr>
+            <tr>
+                <td>new field</td>
+                <td><input type="text" class="input-field" name="nfield" id="nfield"></td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td><input type="text" class="input-field" name="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td>mobile</td>
+                <td><input type="text" class="input-field" name="mobile" required></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div id="data"></div>
+
+    <script>
+        const inputElements = document.querySelectorAll('.input-field');
+
+        inputElements.forEach(input => {
+            input.addEventListener('blur', function () {
+                checkRequired(this);
+            });
+        });
+
+        function checkRequired(input) {
+            let div = document.getElementById("data");
+            let errorSpan = input.nextElementSibling;
+
+            if (input.value === "" && input.hasAttribute('required')) {
+                if (!errorSpan) {
+                    errorSpan = document.createElement("span");
+                    errorSpan.textContent = `${input.getAttribute('name')} is required`;
+                    errorSpan.style.color = "red";
+                    input.parentNode.appendChild(errorSpan);
+
+                    console.log(`called.'${input.id}'`);
+                }
+            } else {
+                if (errorSpan) {
+                    errorSpan.remove();
+                }
+
+                console.log(`called.'${input.id}'`);
+            }
+        }
+    </script>
+</body>
+
+</html>
