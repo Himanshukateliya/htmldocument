@@ -1,0 +1,172 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Booking Form</title>
+</head>
+
+<body>
+    <h1>Restaurant Booking Form</h1>
+    <form id="bookingForm">
+        <label for="bookingChoice">Choice of Booking:</label>
+        <select id="bookingChoice" onchange="showOptions()">
+            <option value="fullDay">Full Day Booking</option>
+            <option value="halfDay">Half Day Booking</option>
+            <option value="hourly">Hourly Booking</option>
+        </select><br>
+
+        <label for="userName">User Name:</label>
+        <input type="text" id="userName" required><br>
+
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="tel" id="mobileNumber" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+
+        <label for="numOfPersons">No. of Persons:</label>
+        <input type="number" id="numOfPersons" required><br>
+
+        <div id="dateDiv">
+            <label for="date">Date:</label>
+            <input type="date" id="date" required><br>
+        </div>
+
+        <div id="slotDiv">
+            <label for="slot">Slot:</label>
+            <select id="slot">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+            </select><br>
+        </div>
+
+        <div id="timeDiv">
+            <label for="time">Time:</label>
+            <input type="time" id="time" required><br>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function showOptions() {
+            const bookingChoice = document.getElementById('bookingChoice');
+            const dateDiv = document.getElementById('dateDiv');
+            const slotDiv = document.getElementById('slotDiv');
+            const timeDiv = document.getElementById('timeDiv');
+
+            if (bookingChoice.value === 'fullDay') {
+                dateDiv.style.display = 'block';
+                slotDiv.style.display = 'none';
+                timeDiv.style.display = 'none';
+            } else if (bookingChoice.value === 'halfDay') {
+                dateDiv.style.display = 'block';
+                slotDiv.style.display = 'block';
+                timeDiv.style.display = 'none';
+            } else if (bookingChoice.value === 'hourly') {
+                dateDiv.style.display = 'block';
+                slotDiv.style.display = 'none';
+                timeDiv.style.display = 'block';
+            }
+        }
+
+        document.getElementById('bookingForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const bookingChoice = document.getElementById('bookingChoice').value;
+            const userName = document.getElementById('userName').value;
+            const mobileNumber = document.getElementById('mobileNumber').value;
+            const email = document.getElementById('email').value;
+            const numOfPersons = document.getElementById('numOfPersons').value;
+            const date = document.getElementById('date').value;
+            const slot = document.getElementById('slot').value;
+            const time = document.getElementById('time').value;
+
+            alert(`Booking Choice: ${bookingChoice}\nUser Name: ${userName}\nMobile Number: ${mobileNumber}\nEmail: ${email}\nNo. of Persons: ${numOfPersons}\nDate: ${date}\nSlot: ${slot}\nTime: ${time}`);
+        });
+    </script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Restaurant Booking Form</title>
+</head>
+
+<body>
+    <h2>Restaurant Booking Form</h2>
+    <form id="bookingForm">
+        <label for="bookingType">Choice of Booking:</label>
+        <select id="bookingType" onchange="showBookingOptions()">
+            <option value="fullDay">Full day booking</option>
+            <option value="halfDay">Half day booking</option>
+            <option value="hourly">Hourly booking</option>
+        </select>
+
+        <br>
+
+        <label for="userName">User Name:</label>
+        <input type="text" id="userName" required><br>
+
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="tel" id="mobileNumber" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+
+        <label for="noOfPersons">No of Persons:</label>
+        <input type="number" id="noOfPersons" required><br>
+
+        <div id="dateContainer">
+            <label for="date">Date:</label>
+            <input type="date" id="date" required><br>
+        </div>
+
+        <div id="slotContainer">
+            <label for="slot">Slot:</label>
+            <select id="slot">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+            </select><br>
+        </div>
+
+        <div id="timeContainer">
+            <label for="time">Time:</label>
+            <input type="time" id="time"><br>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function showBookingOptions() {
+            var bookingType = document.getElementById("bookingType").value;
+            var dateContainer = document.getElementById("dateContainer");
+            var slotContainer = document.getElementById("slotContainer");
+            var timeContainer = document.getElementById("timeContainer");
+
+            dateContainer.style.display = "none";
+            slotContainer.style.display = "none";
+            timeContainer.style.display = "none";
+
+            if (bookingType === "fullDay") {
+                dateContainer.style.display = "block";
+            } else if (bookingType === "halfDay") {
+                dateContainer.style.display = "block";
+                slotContainer.style.display = "block";
+            } else if (bookingType === "hourly") {
+                dateContainer.style.display = "block";
+                timeContainer.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
