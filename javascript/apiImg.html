@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div {
+
+            /* width: 100px;
+            height: 100px; */
+            object-fit: cover;
+        }
+
+        #div img {
+            width: 100px;
+            border: 0px solid black;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #div p {
+            width: 500px;
+            border: 0px solid black;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fetch Data</h1>
+    <button id="btnClick"> Fetch Now!</button>
+    <div id="div"></div>
+    <div id="text"></div>
+
+
+
+    <script>
+        let btn = document.getElementById('btnClick')
+        let div = document.getElementById('div')
+        btn.addEventListener('click', function () {
+            fetch("https://fakestoreapi.com/products/category/jewelery")
+                .then(res => res.json())
+                .then(result => {
+                    let data = result;
+                    for (let index = 0; index < data.length; index++) {
+                        const bbb = data[index]["id"];
+                        const aaa = data[index]["image"];
+                        const ccc = data[index]["title"];
+                        const ddd = data[index]["price"];
+                        const eee = data[index]["description"];
+                        let text1 = document.createElement('p')
+                        let text2 = document.createElement('p')
+                        let text3 = document.createElement('p')
+                        let text4 = document.createElement('p')
+                        text1.textContent += bbb;
+                        text2.textContent += ccc;
+                        text3.textContent += ddd;
+                        text4.textContent += eee;
+                        let img = document.createElement('img');
+                        img.setAttribute('src', aaa)
+                        div.append(img)
+                        div.appendChild(text1)
+                        div.appendChild(text2)
+                        div.appendChild(text3)
+                        div.appendChild(text4)
+                        div.innerHTML += "<br>"
+                    }
+
+                })
+                .catch(err => console.log(err))
+        })
+    </script>
+</body>
+
+</html>
