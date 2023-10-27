@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slider-item { width: 1000px; margin: 0 auto;  }
+        .slider-item img{ width: 100%; }
+    </style>
+</head>
+<body>
+
+    <script>
+        counter=0
+        function slider() {
+            console.log(counter);
+            counter++
+            setTimeout(slider, 3000);
+        }
+        // setInterval(slider, 2000);
+        slider()
+    </script>
+
+</body>
+
+</html>
