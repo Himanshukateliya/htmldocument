@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slider-item { width: 1000px; margin: 0 auto;  }
+        .slider-item img{ width: 100%; }
+        .slider-effect{ animation: slidereffect 3s }
+        @keyframes slidereffect {
+            0%{ transform: scale(.5); }
+            100%{transform: scale(1);}
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="slider">
+        <div class="slider-item"><img src="images/1.jfif" alt=""></div>
+        <div class="slider-item"><img src="images/2.jfif" alt=""></div>
+        <div class="slider-item"><img src="images/3.jfif" alt=""></div>
+        <div class="slider-item"><img src="images/4.jfif" alt=""></div>
+        <div class="slider-item"><img src="images/5.jfif" alt=""></div>
+    </div>
+
+    <script>
+        let SliderData = document.getElementsByClassName("slider-item") 
+        console.log(SliderData);
+        counter=0
+        function slider() {
+            // console.log(SliderData[0]);
+            for (let index = 0; index < SliderData.length; index++) {
+                // const element = SliderData[index];
+                // console.log(SliderData[index]);
+                SliderData[index].style.display="none"
+                
+            }
+            SliderData[counter].style.display="block"
+            console.log(SliderData[counter].classList);
+            SliderData[counter].classList.add("slider-effect")
+            // SliderData[0].style.display="none"
+            // SliderData[1].style.display="none"
+            // SliderData[2].style.display="none"
+            // SliderData[3].style.display="none"
+            // console.log("slider");
+            counter++
+            setTimeout(slider, 3000);
+        }
+        // setInterval(slider, 2000);
+        slider()
+    </script>
+
+</body>
+
+</html>
